@@ -1,0 +1,7 @@
+# exportiert von Günther Hölzl
+lime juice:Caipirinha,Margarita
+cachaca:Caipirinha
+contreau:Margarita
+tequila:Margarita
+
+lime juice, cachaca

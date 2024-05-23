@@ -1,0 +1,18 @@
+# Kommentar
+
+Zutat A:Latin Lover,Carribean Dream,Malibu Barbados,Malibu Margarita
+#Kommentar
+
+#Kommentar
+Zutat B:Brazilian Sunrise,Latin Lover,Caipirinha,Caipifragola,Tequila Sunrise,Carribean Dream,Malibu Sunrise
+
+
+
+Zutat C:Malibu Barbados,Malibu Margarita,Malibu Sunrise
+#Kommentar
+#Kommentar
+Zutat E:Margarita
+Zutat F:Brazilian Sunrise,Tequila Sunrise,Carribean Dream,Malibu Sunrise
+#Kommentar
+Zutat F, Zutat C, Zutat A
+#Kommentar
