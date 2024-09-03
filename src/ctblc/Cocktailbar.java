@@ -2,6 +2,7 @@ package ctblc;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -12,7 +13,7 @@ public class Cocktailbar {
     public static Set<String> getAvailableDrinks(String filename) {
         Set<String> drinks = new TreeSet<>();
 
-        try (BufferedReader br = Files.newBufferedReader(Path.of(filename))) {
+        try (BufferedReader br = Files.newBufferedReader(Path.of(filename), StandardCharsets.UTF_8)) {
             List<String> lines = new ArrayList<>(br.lines().filter(line -> (!line.isBlank() && !line.startsWith("#"))).toList());
             if (lines.isEmpty()) {
                 return drinks;
@@ -34,9 +35,8 @@ public class Cocktailbar {
                 });
             });
             dwi.forEach((k, v) -> {
-                if (ingredients.containsAll(v)) {
-                    drinks.add(k);
-                }
+                if (ingredients.containsAll(v)) drinks.add(k);
+
             });
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -14,7 +14,7 @@ public class TestDingsis {
         System.out.println("normal:");
         Cocktailbar.getAvailableDrinks("resources/cocktailmix.txt").forEach(System.out::println);
 
-        System.out.println();
+        System.out.println( );
         System.out.println("unknown:");
         Cocktailbar.getAvailableDrinks("resources/cocktailmix_unknown.txt").forEach(System.out::println);
         System.out.println("empty:");
